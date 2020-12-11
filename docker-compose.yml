@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  jupydocker:
+    build: .
+    container_name: jupydocker
+    volumes:
+      - "./projects:/src/projects"
+    ports:
+      - "8888:8888"
